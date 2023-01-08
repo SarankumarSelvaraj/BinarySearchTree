@@ -33,6 +33,18 @@ class BinarySolution {
 			preOrderTraversal(root.right);
 		}
 	}
+	void inOrderTraversal(Node root) {
+		if(root != null) {
+		  inOrderTraversal(root.left);
+		  System.out.print(root.key + " ");
+		  inOrderTraversal(root.right);
+		}
+	}
+	void postOrderTraversal(Node root) {
+	  postOrderTraversal(root.left);
+          postOrderTraversal(root.right);
+	  System.out.print(root.key + " ");
+	}
 }
 
 
@@ -48,5 +60,7 @@ public class BST {
 		 b1.insertKey('H');
 		 
 		 b1.preOrderTraversal(b1.root);
+		 b1.inOrderTraversal(b1.root);
+		 b1.postOrderTraversal(b1.root);
 	 }
 }
