@@ -1,8 +1,10 @@
 import java.util.ArrayList;
-
+/*ArrayList is the collection of the elements with same data type which is dynamic that means we can resize the elements of the arrayList and also modified the 
+particular element in the array list. */
 public class ArrayLists {
    public static void main(String[] args) {
     ArrayList<String> list = new ArrayList<>();
+      // Different types of operations we performed in the array list.
     // added the elements into array list element here.
     list .add(0, "Java");
     list.add(1, "Kotlin");
